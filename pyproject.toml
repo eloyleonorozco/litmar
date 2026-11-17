@@ -1,0 +1,20 @@
+[project]
+name = "litmar"
+version = "0.1.0"
+description = "Paquete de Python litmar"
+readme = "README.md"
+authors = [
+    { name = "Jorge ELoy Leon Orozco", email = "150449861+eloyleonorozco@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["uv_build>=0.11.11,<0.12.0"]
+build-backend = "uv_build"
